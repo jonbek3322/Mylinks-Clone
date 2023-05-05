@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havola.uz | Barcha linklar</title>
+</head>
+<body>
+    <h1>This is all links!</h1>
+    {% for link in links %}
+        
+        <b>Nomi | </b>{{link.name}}
+        <b>Izoh | </b>{{link.description}}
+        <b>Yaratilgan vaqti | </b>{{link.created_at}}
+        <b>Yangilangan vaqti | </b>{{link.modified_at}}
+        <a href="{{link.url}}">Havola</a>
+        
+    {% endfor %}
+</body>
+</html>
